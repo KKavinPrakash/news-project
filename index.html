@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="./1851190-uhd_3840_2160_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+    </div>
+    <div class="content">
+        <header>
+            <div class="title-container">
+                <h1 class="heads">ADG Blog</h1>
+            </div>
+            <div class="controls">
+                <div class="categories" id="category-options">
+                    <button class="category-btn" data-value="">All</button>
+                    <button class="category-btn" data-value="sports">Sports</button>
+                    <button class="category-btn" data-value="finance">Finance</button>
+                    <button class="category-btn" data-value="technology">Technology</button>
+                </div>
+            </div>
+        </header>
+        <main id="news-container">
+            <!-- News flashcards will be injected here -->
+        </main>
+        <div id="loading" class="loading">Loading...</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
