@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Handle category selection
+    // Handle category 
     categoryOptions.querySelectorAll('input').forEach(input => {
         input.addEventListener('change', (event) => {
             selectedCategory = event.target.value;
@@ -66,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500); // Duration of animation
     }
 
-    // Add scroll event listener to hide header on scroll down and show on scroll up
     let lastScrollTop = 0;
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
@@ -78,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     });
 
-    // Add click event listener for dropdowns to trigger animations
+    
     document.querySelectorAll('.dropdown').forEach(dropdown => {
         const button = dropdown.querySelector('.dropbtn');
         button.addEventListener('click', () => {
