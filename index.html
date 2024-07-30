@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADG</title>
+    <title>Blog</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,15 +16,29 @@
     </div>
     <div class="content">
         <header>
-            <div class="title-container">
+            <div class="header-content">
+                <img src="./adg_logo_white (1).png" height="45px" alt="Icon" class="icon">
                 <h1 class="heads">ADG Blog</h1>
             </div>
             <div class="controls">
-                <div class="categories" id="category-options">
-                    <button class="category-btn" data-value="">All</button>
-                    <button class="category-btn" data-value="sports">Sports</button>
-                    <button class="category-btn" data-value="finance">Finance</button>
-                    <button class="category-btn" data-value="technology">Technology</button>
+                <div class="dropdown" id="region-dropdown">
+                    <button class="dropbtn">Select Region</button>
+                    <div class="dropdown-content" id="region-options">
+                        <label><input type="radio" name="region" value="in"> India</label>
+                        <label><input type="radio" name="region" value="us"> United States</label>
+                        <label><input type="radio" name="region" value="ca"> Canada</label>
+                        <label><input type="radio" name="region" value="au"> Australia</label>
+                        <label><input type="radio" name="region" value="world" checked> International</label>
+                    </div>
+                </div>
+                <div class="dropdown" id="category-dropdown">
+                    <button class="dropbtn">Select Category</button>
+                    <div class="dropdown-content" id="category-options">
+                        <label><input type="radio" name="category" value=""> All</label>
+                        <label><input type="radio" name="category" value="sports"> Sports</label>
+                        <label><input type="radio" name="category" value="finance"> Finance</label>
+                        <label><input type="radio" name="category" value="technology"> Technology</label>
+                    </div>
                 </div>
             </div>
         </header>
